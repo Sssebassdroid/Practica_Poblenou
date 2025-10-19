@@ -5,98 +5,206 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Institut Example</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/Principal.css">
+
 </head>
 <body>
   <!-- HEADER / NAVBAR -->
-  <header class="bg-light border-bottom">
-    <div class="container py-3">
-      <div class="d-flex justify-content-between align-items-center">
-        <h1 class="h3">Institut Name</h1>
-        <nav>
-          <ul class="nav">
-            <li class="nav-item"><a class="nav-link" href="#">Inici</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Formació</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Serveis</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contacta</a></li>
-          </ul>
-        </nav>
+  <div class="navbar_superior py-1 px-3 d-flex justify-content-between align-items-center">
+    <div class="left">
+      <a href="#">ES</a>
+      <a href="#">CA</a>
+      <a href="#">EN</a>
+      <span class="mx-2 text-secondary">|</span>
+      <a href="tel:932253812" class="phone">93 225 38 12</a>
+    </div>
+    <div class="right">
+      <a href="#">RECURSOS TIC</a>
+      <a href="#">CONTACTA</a>
+      <a href="#" class="aula btn btn-warning text-dark py-1 px-2">AULA VIRTUAL</a>
+    </div>
+  </div>
+
+  <!-- Navbar Principal -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="https://institutpoblenou.cat/wp-content/uploads/2020/01/logo-institut-poblenou.png" alt="Institut Poblenou" height="50" class="me-2">
+        
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">FORMACIÓN</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../html/Poblenou_Informatica.html">Informática</a></li>
+              <li><a class="dropdown-item" href="#">Administración</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">EMPRESA</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Prácticas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">ERASMUS+</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Proyectos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">SECRETARÍA</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Matrícula</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">EL INSTITUTO</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Quiénes somos</a></li>
+            </ul>
+          </li>
+        </ul>
+        </button>
       </div>
     </div>
+  </nav>
+
+  
+
   </header>
-
-  <!-- HERO / MAIN BANNER -->
-  <section class="hero bg-primary text-white text-center py-5">
-    <div class="container">
-      <h2>Benvinguts a l’Institut Example</h2>
-      <p class="lead">Formació professional dual amb programes actualitzats.</p>
-      <a href="#" class="btn btn-light">Més informació</a>
+  <!-- Hero Section -->
+  <section class="hero d-flex flex-column justify-content-center align-items-center text-center text-white">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h2 class="fw-bold">Área de estudio</h2>
+      <h1 class="display-5 fw-bold">Informática y Comunicaciones</h1>
+      <p class="lead">Impulsa tu futuro en tan solo un clic</p>
     </div>
+
+    <div class="hero-buttons d-flex flex-wrap justify-content-center mt-4">
+      <a href="#" class="btn-hero">Administración y Gestión</a>
+      <a href="#" class="btn-hero">Comercio y Marketing</a>
+      
+<a href="../html/Poblenou_Informatica.html" class="btn-hero">
+  <img src="https://cdn-icons-png.flaticon.com/512/1589/1589642.png" alt="Informática y Comunicaciones" style="width: 40px; vertical-align: middle;">
+  Informática y Comunicaciones
+</a>
+
+      <a href="#" class="btn-hero">P. de Formación e Inserción (PFI)</a>
+    </div> 
   </section>
+  <section class="main-content">
+  <div class="intro">
+    <h1>Benvinguts a l’<span>Institut Poblenou</span></h1>
+    <p>Som un centre de formació professional Dual situat al barri de Poblenou, a pocs metres de la platja del Bogatell. T’oferim la millor educació en Comerç i màrqueting, Administració i finances així com Informàtica i comunicacions, amb uns temaris sempre enfocats a la realitat que trobaràs en el teu futur treball.</p>
+  </div>
 
-  <!-- PROGRAMS / CATEGORIES -->
-  <section class="programs container py-5">
-    <div class="row g-4">
+  <div class="video-section">
+    <h2>Vídeo de presentació</h2>
+    <div class="video-wrapper">
+      <!-- embed YouTube or other video -->
+          <img src="https://institutpoblenou.cat/wp-content/uploads/2020/03/IESPOBLENOU-salas-comunes-8.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="why-choose-us">
+    <h2>Per què triar-nos?</h2>
+    <ul class="reasons">
+      <li>
+        <img src="https://institutpoblenou.cat/wp-content/uploads/2020/03/IESPOBLENOU-nuestras-aulas-9.jpg" alt="Equip docent actiu">
+        <h3>Equip docent actiu laboralment</h3>
+        <p>Explicació sobre per què això és un avantatge.</p>
+      </li>
+      <li>
+        <img src="https://institutpoblenou.cat/wp-content/uploads/2020/03/que-es-la-fp-dual-inner-1.jpg" alt="Aules especialitzades">
+        <h3>Aules especialitzades en simulacions reals</h3>
+        <p>Detalls del laboratori, pràctiques …</p>
+      </li>
+      <li>
+        <img src="data:image/jpeg;base64,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" alt="Continguts actualitzats">
+        <h3>Continguts revisats contínuament</h3>
+        <p>Com mantenim el curs al dia amb les empreses del sector.</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="call-to-action">
+    <h2>Impulsa el teu futur amb només un clic</h2>
+    <p>Vols desenvolupar la teva carrera amb un grau de Formació Professional o un Programa de Formació i Inserció? Deixa’ns les teves dades i et contactem.</p>
+    <form action="/submit-lead" method="POST">
+      <input type="text" name="name" placeholder="Nom i cognoms" required>
+      <input type="email" name="email" placeholder="Correu electrònic" required>
+      <button type="submit">Envia-ns les teves dades</button>
+    </form>
+  </div>
+</section>
+<!-- FOOTER -->
+<footer class="footer text-light pt-5 pb-4">
+  <div class="container">
+    <div class="row gy-4">
+      <!-- Logo + Contact -->
       <div class="col-md-4">
-        <div class="card">
-          <img src="ruta-de-la-imatge.jpg" class="card-img-top" alt="Administració i Gestió">
-          <div class="card-body">
-            <h5 class="card-title">Administració i Gestió</h5>
-            <p class="card-text">Breve descripción del programa.</p>
-            <a href="#" class="btn btn-primary">Veure</a>
-          </div>
-        </div>
+        <img src="https://institutpoblenou.cat/wp-content/uploads/2020/01/logo-institut-poblenou.png" 
+             alt="Institut Poblenou" class="mb-3" width="220">
+        <p class="mb-1 fw-bold">93 225 38 12 · 93 225 37 92</p>
+        <p class="mb-0">C/ Doctor Trueta, 206<br>08005, Barcelona</p>
       </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="ruta-de-la-imatge.jpg" class="card-img-top" alt="Comerç i Màrqueting">
-          <div class="card-body">
-            <h5 class="card-title">Comerç i Màrqueting</h5>
-            <p class="card-text">Breve descripción del programa.</p>
-            <a href="#" class="btn btn-primary">Veure</a>
-          </div>
-        </div>
+
+      <!-- Matriculació -->
+      <div class="col-md-3">
+        <h6 class="fw-bold text-uppercase mb-3">Matriculació</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Comerç i Màrqueting</a></li>
+          <li><a href="#" class="footer-link">Administració i Gestió</a></li>
+          <li><a href="#" class="footer-link">Informàtica i Comunicacions</a></li>
+          <li><a href="#" class="footer-link">Programes de Formació i Inserció (PFI)</a></li>
+        </ul>
       </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="ruta-de-la-imatge.jpg" class="card-img-top" alt="Informàtica i Comunicacions">
-          <div class="card-body">
-            <h5 class="card-title">Informàtica i Comunicacions</h5>
-            <p class="card-text">Breve descripción del programa.</p>
-            <a href="#" class="btn btn-primary">Veure</a>
-          </div>
+
+      <!-- Enllaços -->
+      <div class="col-md-2">
+        <h6 class="fw-bold text-uppercase mb-3">Enllaços</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Aula virtual</a></li>
+          <li><a href="#" class="footer-link">ERASMUS+</a></li>
+          <li><a href="#" class="footer-link">Empresa</a></li>
+          <li><a href="#" class="footer-link">Serveis</a></li>
+          <li><a href="#" class="footer-link">Contacta</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal + Xarxes -->
+      <div class="col-md-3">
+        <h6 class="fw-bold text-uppercase mb-3">Legal</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Avís legal</a></li>
+          <li><a href="#" class="footer-link">Política de privacitat</a></li>
+          <li><a href="#" class="footer-link">Política de cookies</a></li>
+        </ul>
+
+        <div class="mt-3">
+          <a href="#" class="me-3 social"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="me-3 social"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="me-3 social"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="me-3 social"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="social"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- ABOUT / WHY CHOOSE US -->
-  <section class="about bg-light py-5">
-    <div class="container">
-      <h3>Per què triar-nos?</h3>
-      <ul>
-        <li>Equip docent actiu laboralment</li>
-        <li>Temaris enfocats a la realitat del treball</li>
-        <li>Aules pràctiques i simulacions</li>
-        <li>Actualització contínua dels cursos</li>
-      </ul>
-    </div>
-  </section>
+    <hr class="my-4 border-secondary">
 
-  <!-- CONTACT + FOOTER -->
-  <footer class="footer bg-dark text-light py-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h5>Contacta</h5>
-          <p>C/ Doctor Trueta, 206, Barcelona, 08005</p>
-          <p>Telèfon: 93 225 38 12</p>
-        </div>
-        <div class="col-md-6 text-md-end">
-          <small>© Institut Example 2025 – Tots els drets reservats</small>
-        </div>
-      </div>
+    <div class="text-center small">
+      © Institut Example 2025 — Tots els drets reservats
     </div>
-  </footer>
+  </div>
+</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
